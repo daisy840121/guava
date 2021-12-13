@@ -6,7 +6,7 @@
     <meta content="width=device-width,initial-scale=1" name="viewport">
     <title> 台中太平芭樂家族</title>
     <link href="../../assets/myicon.png" rel="icon" type="/img/y-jpg">
-  <script defer src="../js/main.js?48885116a14990b2e1c3"></script><script defer src="../js/cart.js?48885116a14990b2e1c3"></script><link href="../css/main.css?48885116a14990b2e1c3" rel="stylesheet"><link href="../css/cart.css?48885116a14990b2e1c3" rel="stylesheet"></head>
+  <script defer src="../js/main.js?e5e69c4b4bcd95cde33e"></script><script defer src="../js/cart.js?e5e69c4b4bcd95cde33e"></script><script defer src="../js/var_cartItem.js?e5e69c4b4bcd95cde33e"></script><link href="../css/main.css?e5e69c4b4bcd95cde33e" rel="stylesheet"><link href="../css/cart.css?e5e69c4b4bcd95cde33e" rel="stylesheet"></head>
   <body>
     <main>
       <header>
@@ -14,7 +14,7 @@
           <div class="nav-wrap"><a href="./cart.html" class="nav-icon-box"> <img src="../assets/cart.svg" alt="" class="nav-icon"></a>
             <div class="nav-icon-box" data-bs-target="#staticBackdrop" data-bs-toggle="modal"><img src="../assets/admin.svg" alt="" class="nav-icon"></div>
             <!--login_modal-->
-            <div class="modal fade" aria-labelledby="staticBackdropLabel" id="staticBackdrop" tabindex="-1" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+            <div class="modal fade" id="staticBackdrop" aria-labelledby="staticBackdropLabel" tabindex="-1" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
               <div class="modal-dialog">
                 <div class="modal-content login-box">
                   <div class="modal-body login-box-body"> 
@@ -45,7 +45,7 @@
           </div>
           <div class="nav-hamburger"><img src="../assets/hamburger.svg" class="hamburger" aria-controls="nav-hamburger" data-bs-toggle="offcanvas" href="#nav-hamburger" role="button"></div>
           <!--hamburger_menu-->
-          <div class="offcanvas offcanvas-start" aria-labelledby="nav-hamburger" id="nav-hamburger" tabindex="-1">
+          <div class="offcanvas offcanvas-start" id="nav-hamburger" aria-labelledby="nav-hamburger" tabindex="-1">
             <div class="offcanvas-body"><a href="./index.html" class="nav-hamburger-logo"> <img src="../assets/logo.png" alt=""></a>
               <ul class="nav-hamburger-list"> 
                 <li class="nav-hamburger-item"><a href="./about.html" class="nav-hamburger-item-link"><span class="nav-hamburger-item-icon">
@@ -133,36 +133,10 @@
           </div>
           <div class="cart-info-box">
             <div class="cart-info-tit">訂購須知</div>
-            <div class="cart-order-item">
-              <div class="cart-order-move-prd-name">
-                <p>紅心芭樂</p>
-              </div>
-              <div class="cart-order-pic"> <img src="../assets/product/product2.jpeg" alt=""></div>
-              <div class="cart-order-prd-name">
-                <p class="cart-order-title">品項</p>
-                <p class="cart-order-txt">紅心芭樂 </p>
-              </div>
-              <div class="cart-order-note"> 
-                <p class="cart-order-title">備註</p>
-                <p class="cart-order-txt">備註備註備註備註備註備註備註備註備註備註備註備註備註備註備註</p>
-              </div>
-              <div class="cart-order-num">
-                <p class="cart-order-title">數量</p>
-                <select aria-label="product-number" class="prd_add_num form-select">
-                  <option value="1" selected>1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                </select>
-              </div>
-              <div class="cart-order-price"> 
-                <p class="cart-order-title">價格  </p>
-                <p class="cart-order-price-txt">$25    </p>
-              </div>
-              <div class="cart-order-del">
-                <p class="cart-order-title cart-order-opacity-tit">刪除</p><img src="../assets/garbage.svg" alt="">
-              </div>
+            <div class="cart-item">
+              <div class="cart-order-item"></div>
             </div>
-            <div class="cart-order-total"> <span class="cart-order-total-txt">小計</span><span class="cart-order-total-price">＄25 </span></div>
+            <div class="cart-order-total"> <span class="cart-order-total-txt">小計</span><span class="cart-order-total-price" id="cart-item-tot">＄25 </span></div>
           </div>
           <div class="cart-info-box">
             <div class="cart-info-tit">付款方式
@@ -256,11 +230,11 @@
             <ul class="total-warp"> 
               <li class="total-item"> 
                 <div class="total-title">訂單總計</div>
-                <div class="total-txt">NTD.$125</div>
+                <div class="total-txt" id="cart-subtotal">NTD.$125</div>
               </li>
               <li class="total-item"> 
                 <div class="total-title">折扣</div>
-                <div class="total-txt">NTD.-$0</div>
+                <div class="total-txt" id="cart-tax">NTD.-$0</div>
               </li>
               <li class="total-item total-item-move-hide"> 
                 <div class="total-title">備註</div>
@@ -271,7 +245,7 @@
                 <div class="total-txt">NTD.$100</div>
               </li>
             </ul>
-            <div class="total-footer"><span class="total-footer-txt"> <span class="total-footer-txt-title">小計</span><span class="total-footer-txt-price">＄50</span></span><span class="total-footer-btn"><a href="./index.html" class="btn light-btn goshopping">繼續購物</a><a href="./cart_finish.html" class="btn dark-btn"> 訂單送出 </a></span></div>
+            <div class="total-footer"><span class="total-footer-txt"> <span class="total-footer-txt-title">小計</span><span class="total-footer-txt-price" id="cart-total">＄50</span></span><span class="total-footer-btn"><a href="./index.html" class="btn light-btn goshopping">繼續購物</a><a href="./cart_finish.html" class="btn dark-btn"> 訂單送出 </a></span></div>
           </div>
         </div>
       </div>
