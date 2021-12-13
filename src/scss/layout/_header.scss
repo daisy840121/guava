@@ -1,0 +1,237 @@
+.nav {
+  z-index: 1051;
+  width: 100%;
+  position:absolute;
+  background-color: transparent;
+  @media #{$lg-bp} {
+    position: relative;
+    height:84px;
+    background-color: #FAFAFA;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    }
+  @media #{$sm-bp} {
+    height: 56px;
+    background-color: #FAFAFA;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    }
+  &-hamburger{
+  z-index: 1000;
+  width: 84px;
+  padding: 41px 0px 0px 0px;
+  margin-left: 32px;
+  text-align: center;
+  @media #{$lg-bp} {
+    position: absolute;
+    padding:28.5px 0px;
+    margin: 0;
+    opacity: 0.5;
+     }
+  @media #{$sm-bp} {
+    padding:19px 0px;
+    .hamburger{
+      width: 24px;
+    }
+    }
+  }
+  &-logo{
+    margin: auto;
+    padding: 4px 0px;
+    display: none;
+    @media #{$lg-bp} {
+      display:block;
+      width:100px;
+      img{width: 100%;}
+      }
+    @media #{$sm-bp} {
+      width:150px;
+      }
+  }
+  &-wrap{
+    position:absolute;
+    right: 0;
+    padding: 36px 63px 0px 0px;
+    display: flex;
+    @media #{$lg-bp} {
+     padding:28.5px 0px;
+      }
+    @media #{$sm-bp} {
+      padding:19px 0px;
+        }
+    }
+  &-icon-box {
+    border: 1.5px solid #000;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0px 14px;
+    @media #{$lg-bp} {
+      border:none;
+      margin:0px 12px;
+      }
+    @media #{$xxs-bp} {
+      margin:0px 6px;
+      }
+  }
+  &-icon{
+    @media #{$lg-bp} {
+      opacity: 0.5;
+      }
+  }
+  &-title {
+    writing-mode: vertical-rl;
+    font-family:"Gen Shin Gothic";
+    font-weight: 300; 
+    font-size: 30px;
+    line-height:2px;
+    letter-spacing: 20px;
+    align-items: center;
+    padding: 35px 0px;
+  }
+  &-second {
+    width: 84px;
+    height: 901px;
+    background-color: transparent;
+    padding: 41px 0px 0px 0px;
+    margin-left:32px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    @media #{$lg-bp} {
+      display:none;
+      }
+  }
+}
+
+
+.column-btn{
+  width : 40px;
+  height :174px;
+  border-radius:24px;
+  border: 1.5px solid #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0px;
+  &:hover{
+    color: #393939;
+  }
+  &-txt{
+    font-family: "Gen Shin Gothic";
+    font-size: 18px;
+    line-height: 31px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 25px 11px;
+    &:hover{
+      color: #393939;
+    }
+  }
+  }
+  
+
+.offcanvas{
+  max-width: 308px !important;
+  box-shadow: 4px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  @media #{$sm-bp} {
+    width: 286px  !important;
+  }
+&-header{
+  position: relative;
+}
+&-body{
+  padding: 0 !important;
+  }
+}
+
+
+//offcanvas--------------------------------------------------------
+.btn-close{
+padding: 0 !important;
+margin: 0 !important;
+position: absolute;
+right:10px;
+top: 10px;
+  }
+
+
+.nav-hamburger{
+  &-list{
+    padding-top: 32px;
+    @media #{$sm-bp} {
+      padding-top:16px;
+      border-top:1px rgba(0, 0, 0, 0.15) solid;
+    }
+  }
+  &-logo{
+    display: flex;
+    width: 182px;
+    height: 71px;
+    margin: auto;
+    margin-top: 40px;
+    img{
+      width: 100%;
+    }
+    @media #{$sm-bp} {
+      width: 112px;
+      height: 44px;
+      margin: 20px;
+    }
+  }
+  &-item{
+  padding:0px 16px;
+  }
+  &-item-link{
+    display: flex;
+    align-items: center;
+    height: 48px;
+    padding-left:22px;
+    @media #{$sm-bp} {
+      height: 44px;
+    }
+    &:hover{
+      color: #419765;
+    }
+    &:focus{
+      background-color: #EEEEEE;
+      color: #003C13;
+      }
+
+  }
+  &-item-icon{
+   padding-right:6px;
+   svg{
+    @media #{$sm-bp} {
+      width: 16px;
+      height: 16px;
+    }
+   }
+  }
+  
+  &-txt{
+    width: 100%;
+    padding-top: 3px;
+  }
+  
+  &-txt-zh,&-txt-en{
+    width: 50%;
+    margin:0px 12px;
+    padding-top: 3px;
+    font-family:"Roboto","Noto Sans TC";
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 1px;
+    @media #{$sm-bp} {
+      font-size: 12px;
+    }
+  }
+}
+
+
+
+

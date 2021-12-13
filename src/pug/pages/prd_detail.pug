@@ -1,0 +1,92 @@
+extends ../layout/layout.pug
+
+block view
+    .breadcrumb-nav
+        ol.breadcrumb
+            li.breadcrumb-li 
+                a(href="./index.html") 首頁
+            li.breadcrumb-li 
+                a(href="./product.html") Our Products
+            li.breadcrumb-li.breadcrumb-li-active Product
+    .wrap
+        .prd-detail-wrap.pl-wrap
+            .prd-detail-tit
+                p.big-title.prd-detail-big-tit 天然鳳梨
+                p.subtitle-title.prd-detail-big-subtitle 嚴選產品
+            .prd-squarebracket
+                .squarebrackets
+                    p.squarebrackets-txt 農場革命新時代</br>新鮮有機在鋐州
+            .slider-wrap
+                .slider.slider-for
+                    div.slider-for-pic
+                        img(src="../../assets/product/prd1.png", alt="")
+                    div.slider-for-pic
+                        img(src="../../assets/product/prd2.png", alt="")
+                    div.slider-for-pic
+                        img(src="../../assets/product/prd3.png", alt="")
+                    div.slider-for-pic
+                        img(src="../../assets/product/product1.png", alt="")
+                .slider.slider-nav
+                    div.slider-nav-pic
+                        img(src="../../assets/product/prd1.png", alt="")
+                    div.slider-nav-pic
+                        img(src="../../assets/product/prd2.png", alt="")
+                    div.slider-nav-pic
+                        img(src="../../assets/product/prd3.png", alt="")
+                    div.slider-nav-pic
+                        img(src="../../assets/product/product1.png", alt="")
+            .product-move-pic-wrap
+                .product-move-pic-slideshow
+                    .product-move-pic-placeholder
+                        img(src="../../assets/product/prd1.png", alt="")
+                    .product-move-pic-placeholder
+                        img(src="../../assets/product/prd2.png", alt="")
+                    .product-move-pic-placeholder
+                        img(src="../../assets/product/prd3.png", alt="")
+                span.product-move-pagingInfo
+            .prd-detail-illustrate
+                ul.prd-detail-filter
+                    li.btn.dark-btn.prd-detail-filter-btn.btn-active 單包天然鳳梨[80G]
+                    li.btn.dark-btn.prd-detail-filter-btn 20包天然鳳梨[80G]
+                .prd-count 
+                    p.prd-detail-illustrate-txt 數量
+                    span.prd-count-el 
+                        input.form-control.counter(type="text")
+                        span.qty
+                            span.increment
+                                img(src="../../assets/addition.svg", alt="")
+                            span.decrement
+                                img(src="../../assets/subtraction.svg", alt="")
+                .prd-noto 
+                    p.prd-detail-illustrate-txt 備註欄位(選填)
+                    input.prd-detail-noto-input.form-control(type="text")
+                .prd-description
+                    p.prd-description-tit 產品說明
+                    p.prd-description-subtitle 冷藏商品  |  原產地：台灣
+                    p.prd-description-txt 保存方法：新鮮水果烘製，未開封也請放冰箱冷藏
+                    p.prd-description-txt 食用方法：開封即可食用
+                .prd-icon-wrap 
+                    a.mr-20(href="")
+                        img(src="../../assets/minfb.svg", alt="")
+                    a.mr-20(href="")  
+                        img(src="../../assets/bird.svg", alt="")
+                    a.mr-20(href="")
+                        img(src="../../assets/sinaeye.svg", alt="")
+                .prd-tot-wrap
+                    .prd-tot-txt 
+                        p.prd-tot 合計
+                        p.prd-deliver 免運費-滿1000免運
+                        p.prd-tot-money-wrap
+                            span.prd-tot-money NTD.$2000 
+                            span.prd-tot-money-txt (非會員)
+                    .prd-add-btn
+                        a.btn.dark-btn(href="" data-bs-toggle="modal" data-bs-target="#alerts") 加入購物車 
+                        .modal.fade#alerts(tabindex="-1" aria-labelledby="alerts" aria-hidden="true")
+                            .modal-dialog
+                                .modal-content
+                                    .modal-body.alerts-txt-warp
+                                        p.alerts-txt 您已經成功加入購物車
+                                        //- p.alerts-txt 此帳號已被註冊，請重新輸入。
+                                    .modal-footer
+                                        a.alerts-btn(href="" type="button" data-bs-dismiss="modal") 關閉
+

@@ -1,0 +1,36 @@
+extends ../layout/layout.pug
+
+block view
+    .breadcrumb-nav
+        ol.breadcrumb
+            li.breadcrumb-li 
+                a(href="./index.html") 首頁
+            li.breadcrumb-li.breadcrumb-li-active 購物結帳
+    .wrap
+        .pl-wrap.col-lg-11
+            p.big-title.big-title-pt.cart-big-tit SHOPPING</br>CART
+            p.subtitle-title.cart-subtitle-title 購物結帳
+        .pl-wrap.col-lg-11.cart-sop-timeline
+            span.cart-sop-timeline-item.cart-active
+                .cart-icon
+                    include ../layout/cart/penicon.pug
+                .cart-txt
+                    span.cart-num STEP 01
+                    p.cart-num-txt 填寫訂單資訊
+            span.cart-sop-timeline-item
+                .cart-icon
+                    include ../layout/cart/tickicon.pug
+                .cart-txt
+                    span.cart-num STEP 02
+                    p.cart-num-txt 完成訂購
+        .pl-wrap.col-lg-11
+            include ../layout/cart/checkoutinfo.pug
+            include ../layout/cart/orderitem.pug
+            include ../layout/cart/payinfo.pug
+            include ../layout/cart/orderinfo.pug
+            include ../layout/cart/recipient.pug
+            include ../layout/cart/total.pug
+                    
+
+                    
+                    

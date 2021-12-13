@@ -1,0 +1,2 @@
+(()=>{var e,t=document.getElementsByClassName("accordion-item");for(e=0;e<t.length;e++)t[e].addEventListener("click",(function(){this.classList.toggle("active")}));var n=document.getElementsByClassName("accordion-content").offsetHeight;console.log(n)})();
+//# sourceMappingURL=var_faq.js.map

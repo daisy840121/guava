@@ -1,0 +1,40 @@
+.news-filter-wrap{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    // padding-bottom: 104px;
+}
+.news-bigtitle{
+    width: 100%;
+    padding-top: 156px;
+    @media #{$lg-bp}{
+        padding-top: 40px;
+        }
+}
+
+.news-filter{
+    width: 65%;
+    padding-top: 64px;
+    padding-bottom: 8px;
+    overflow: scroll;
+    white-space: nowrap;
+    @media #{$xl-bp}{
+        width: 100%;
+        }}
+
+.news-filter-squarebrackets{
+    width: 35%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    @media #{$xl-bp}{
+        padding-top: 40px;
+        width: 100%;
+        justify-content: flex-start;
+        order: 4;
+        }
+}
+
+.news-wrap{
+    width: 100%;
+}

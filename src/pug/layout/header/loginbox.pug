@@ -1,0 +1,31 @@
+.modal.fade#staticBackdrop(data-bs-backdrop="static", data-bs-keyboard="false", tabindex="-1", aria-labelledby="staticBackdropLabel", aria-hidden="true")
+    .modal-dialog
+        .modal-content.login-box
+            .modal-body.login-box-body 
+                .login-box-content
+                    button.btn-close.login-box-btn-close(type="button", data-bs-dismiss="modal", aria-label="Close")
+                    p.login-box-title 登入
+                    form#signupForm(action="",autocomplete="off") 
+                        .input-group.login-box-item
+                            input.form-control(type="text", placeholder="帳號",name="account"  aria-label="account",required)
+                        .input-group.login-box-item
+                            input.form-control#user-password-input(type="password",name="password" placeholder="密碼", aria-label="password",required)
+                            i.toggle-password.fa.fa-fw.fa-eye-slash
+                        .input-group.login-box-item
+                            a.login-box-forget-password(href="./forgetpassword.html") 忘記密碼
+                        .input-group.login-box-btn-wrap
+                            button.btn.login-box-btn#signupFormbtn 會員登入
+                    .login-box-icon-wrap
+                            a.login-box-link(href="") 
+                                img(src="../../assets/google.svg", alt="")
+                            a.login-box-link(href="") 
+                                img(src="../../assets/facebook.svg", alt="")
+                            a.login-box-link(href="") 
+                                img(src="../../assets/line.svg", alt="")
+                            a.login-box-link(href="") 
+                                img(src="../../assets/apple.svg", alt="")
+                    .login-box-link-inner
+                        span.login-box-link-inner-txt 
+                            p 沒有會員 ？
+                        a.login-box-link-inner-join(href="./join.html")  
+                            p 立即加入  

@@ -1,0 +1,119 @@
+.certificate-title{
+    padding-top: 156px;
+    @media #{$lg-bp} {
+        padding-top: 40px;
+    }
+}
+
+.certificate-subtitle{
+    padding-top: 92px;
+    @media #{$lg-bp} {
+        padding-top: 52px;
+    }
+}
+
+.certificate-filter{
+    width: 65%;
+    padding-top: 74px;
+    overflow: scroll;
+    white-space: nowrap;
+    @media #{$xl-bp}{
+        width: 100%;
+        }
+    @media #{$lg-bp} {
+        padding-top:40px;
+    } 
+}
+
+.certificate-squarebrackets{
+    width: 35%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    @media #{$xl-bp}{
+        padding-top: 16px;
+        width: 100%;
+        justify-content: flex-start;
+        order: 4;
+        }
+}
+
+.certificate-content{
+   width: 100%;
+   max-width: 1048px;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.certificate-list{
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    @media #{$up1400} {
+        justify-content: space-between;
+    }
+}
+
+.certificate-item{
+    width: 100%;
+    max-width: 384px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 5px 5px;
+    margin-bottom: 24px;
+    margin-right: 24px;
+    @media #{$up1400} {
+        margin-right: 0px;
+        max-width: 320px;
+    }
+    @media #{$sm-bp} {
+        margin-right: 0px;
+    }
+
+}
+
+.certificate-pic{
+    width: 100%;
+    img{
+        max-height: 294px;
+    max-width: 384px;
+    width: 100%;
+    object-fit: cover;
+}
+}
+.certificate-txt-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.certificate-list-title {
+    padding: 16px 0px 8px;
+    font-size: 28px;
+    line-height: 48px;
+    @include fontStyle_zh_300;
+    @media #{$lg-bp} {
+        font-size: 23px;
+        line-height: 33px;
+        font-weight: 400;
+    }
+}
+.certificate-list-date {
+    font-size: 20px;
+    line-height: 32px;
+    padding-bottom: 8px;
+    @include fontStyle_ro_500;
+    @media #{$lg-bp} {
+        font-size: 16px;
+    }
+}
+.certificate-list-txt {
+    padding-bottom: 16px;
+    font-size: 16px;
+    line-height: 20px;
+    @include fontStyle_zh_700;
+    @media #{$lg-bp} {
+        font-size: 12px;
+    }
+}
+

@@ -1,0 +1,165 @@
+
+
+.edd-root {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    user-select: none;
+    color: #333;
+}
+
+.edd-root-disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.edd-head {
+    position: relative;
+    overflow: hidden;
+    height: 52px;
+    background: #eee;
+}
+
+.edd-head,
+.edd-body {
+    border-radius: 5px;
+}
+
+.edd-value {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 35px 10px 10px;
+    line-height: 32px;
+    // &::before {
+    //     content: "\2713";
+    //     position: absolute;
+    //     width: 30px;
+    //     top: 50%;
+    //     left: 10px;
+    //     transform: translate(0, -50%);
+    // }
+}
+
+.edd-arrow {
+    position: absolute;
+    width: 18px;
+    height: 10px;
+    top: calc(50% - 2px);
+    right: calc(25px - 9px);
+    // transition: transform 150ms;
+    pointer-events: none;
+    color: #444;
+}
+
+.edd-arrow::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    top: -5px;
+    right: 0;
+    transform: rotate(45deg);
+    transform-origin: 50% 25%;
+}
+
+.edd-value,
+.edd-option,
+.edd-group-label {
+    overflow: hidden;
+}
+
+.edd-root:not(.edd-root-disabled) .edd-value,
+.edd-option {
+    cursor: pointer;
+}
+
+.edd-select {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    left: -100%;
+    top: 0;
+}
+
+.edd-root-native .edd-select {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.edd-body {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    border: 1px solid #eee;
+    pointer-events: none;
+    overflow: hidden;
+    margin: 8px 0;
+    z-index: 999;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transform: scale(0.95);
+    background: white;
+}
+
+.edd-root-open .edd-body {
+    opacity: 1;
+    pointer-events: all;
+    transform: scale(1);
+    transition: opacity 200ms, transform 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.edd-root-open-above .edd-body {
+    bottom: 100%;
+}
+
+.edd-root-open-below .edd-body {
+    top: 100%;
+}
+
+.edd-items-list {
+    overflow: auto;
+    max-height: 0;
+    transition: max-height 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -webkit-overflow-scrolling: touch;
+}
+
+.edd-option {
+    height: 40px;
+    padding: 6px 10px 6px 30px;
+    transition: background-color 250ms, color 250ms, border-color 250ms;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.edd-option-selected {
+    position: relative;
+    font-weight: 400;
+    color: #000;
+    &::before {
+        content: "\2713";
+        position: absolute;
+        width: 30px;
+        top: 40%;
+        left: 10px;
+        transform: translate(0, -50%);
+        color: #000;
+    }
+}
+
+
+.edd-option-focused:not(.edd-option-disabled) {
+    background: #eee;
+    color: #000;
+}
+
+.edd-option-disabled,
+.edd-group-disabled .edd-option {
+    cursor: default;
+    color: #ccc;
+}

@@ -1,0 +1,22 @@
+extends ../layout/layout.pug
+
+block view
+    .breadcrumb-nav
+        ol.breadcrumb
+            li.breadcrumb-li 
+                a(href="./index.html") 首頁
+            li.breadcrumb-li.breadcrumb-li-active 會員註冊
+    .wrap
+        .col-lg-11.pl-wrap
+            p.big-title.big-title-pt REGISTRATION
+            p.subtitle-title.subtitle-title-pt 會員註冊
+            p.min-title.join-rule 加入會員須知
+            p.explanation-txt.join-rule-txt 本網站上的會員資料與交易資料皆為提供芭樂家族商品訂單所使用，我們將保留您的資料，並保護您的資料安全。 註冊時，代表您同意我們的會員條款。
+            a.join-rule-link(href="./join_member_ rule.html")
+                p.join-rule-page  閱讀加入會員須知 
+                    img.banner-subtitle-arrow.join-rule-link-arrow(src="../../assets/coolicon.png", alt="")
+            .join-member-info  
+                p.min-title 會員資料
+                .col-lg-12.joinForm
+                    .col-lg-10.content
+                        include ../layout/join/form.pug

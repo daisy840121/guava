@@ -1,0 +1,30 @@
+#cart-tab{
+    padding-top: 32px;
+    display: flex;
+    @media #{$lg-bp}{
+        padding-top: 16px;
+    }
+}
+
+.cart-tab{
+    &-txt-wrap{
+        padding-top: 42px;
+        @media #{$lg-bp}{
+            padding-top: 16px;
+        }
+    }
+
+    &-txt{
+        font-size: 14px;
+        line-height: 24px;
+        @include fontStyle_zh_400;
+            &:not(:last-child){
+                padding-bottom: 28px;
+            }
+        }
+}
+
+
+.credit-btn{
+    padding: 8px 25px;
+}

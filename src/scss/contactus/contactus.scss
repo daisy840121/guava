@@ -1,0 +1,141 @@
+.contactus-title{
+    padding-top: 156px;
+    @media #{$lg-bp}{
+    padding-top: 40px;
+            }
+}
+
+.contactus-subtitle{
+    padding-top: 92px;
+    @media #{$lg-bp}{
+        padding-top: 52px;
+                }
+}
+
+.contactus-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contactus-map-wrap{
+    padding-left: 22px;
+    @media #{$xl1200bp}{
+    padding-left: 0;
+        }
+}
+.contactus-txt{
+    font-size: 20px;
+    line-height: 34px;
+    padding-top: 34px;
+    @include fontStyle_zh_300;
+    @media #{$lg-bp}{
+        font-size: 18px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        }
+}
+
+.contactus-form{
+    width: 60%;
+    @media #{$xl1200bp}{
+        width: 100%;
+        }
+} 
+
+.contactus-form-item{
+    width: 100%;
+    padding: 16px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    @media #{$lg-bp}{
+        padding: 0px;
+        }
+}
+.contactus-map{
+    width: 40%;
+    @media #{$md-bp}{
+        width: 100%;
+        margin-top: 50px;
+        }
+}
+#map{
+    width: 389px; 
+    height: 240px;
+    @media #{$md-bp}{
+        width: 343px !important;
+        height: 240px !important;
+    }
+    @media #{$xs-bp} {
+        width: 300px !important;
+        height: 200px !important;
+    }
+}
+.contactus-map{position: relative;}
+.add-marker-info{
+    z-index: 2000;
+    top: 16px;
+    left: 53px;
+    position: absolute;
+    width: 284px;
+    height: 48px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media #{$xs-bp} {
+        left: 7px;
+    }
+}
+
+@mixin marker {
+    border: 1.5px solid #000000;
+   border-radius: 50%;
+   width: 32px;
+   height: 32px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right: 16px;
+}
+.marker{
+    @include marker;
+}
+
+.add-marker-txt{
+    font-size: 14px;
+    line-height: 24px;
+    @include fontStyle_zh_500;
+}
+
+.contactus-map-info-card{
+    max-width: 389px;
+    height: 244px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 5px 5px;
+    padding: 10px 16px;
+    box-sizing: border-box;
+}
+
+.contactus-map-info-inner  {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+
+.marker-txt{
+   font-size: 16px;
+    line-height: 32px;
+    @include fontStyle_ro_500;
+}
+
+.mapboxgl-ctrl,
+.mapboxgl-ctrl-attrib,.mapboxgl-compact,
+.mapboxgl-ctrl-bottom-left,
+.mapboxgl-ctrl-attrib-button{
+    display: none !important;
+}

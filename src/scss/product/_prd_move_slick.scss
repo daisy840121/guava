@@ -1,0 +1,23 @@
+.product-move-pic-wrap{
+    width:98%;
+}
+.product-move-pic-slideshow{
+    width: 100%;
+}
+
+.product-move-pic-placeholder{
+    width: 100%;
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.product-move-pic-wrap{
+    position: relative
+}
+.product-move-pagingInfo{
+    @include pageinfo;
+    bottom:51px;
+    right: 16px;
+}

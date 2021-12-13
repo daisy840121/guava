@@ -1,0 +1,42 @@
+.about-detail-squarebrackets{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-detail-txt-wrap{
+    padding: 26px 0px 140px;
+    width: 100%;
+    max-width:798px;
+    @media #{$lg-bp} {
+        padding: 0px 0px 40px;
+    }
+}
+
+.about-detail-txt-zh{
+    font-size: 14px;
+    line-height: 24px;
+    @include fontStyle_zh_500;
+    padding-bottom: 70px;
+    @media #{$lg-bp} {
+        padding-bottom: 14px;
+    }
+}
+
+.about-detail-txt-en{
+    font-size: 16px;
+    line-height: 32px;
+    @include fontStyle_ro_500;
+}
+
+.read-more-wrap{
+   text-align:center;
+   padding-bottom: 104px;
+} 
+
+.read-more{
+    @include fontStyle_zh_500;
+    font-size: 12px;
+    line-height: 22px; 
+    text-align: center !important;
+}
+

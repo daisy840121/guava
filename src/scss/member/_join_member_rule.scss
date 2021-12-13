@@ -1,0 +1,43 @@
+.join-member-rule{
+        &-title{
+    @include fontStyle_zh_300;
+    font-size: 20px;
+    margin-top: 159px;
+    @media #{$sm-bp}{
+        margin-top: 24px;
+        }
+    }
+    &-subtitle{
+        @include fontStyle_zh_400;
+        font-size: 18px;
+        margin:44px 0px 20px;
+        @media #{$sm-bp}{
+            font-size: 14px;
+            margin:60px 0px 10px;
+            }
+        }
+
+    &-txt{
+        padding: 10px;
+        &-content{
+            @include fontStyle_zh_400;
+            font-size: 14px;
+            line-height: 24px;
+            padding-bottom: 28px;
+            @media #{$sm-bp}{
+            font-size: 12px;
+            padding-left:0px;
+            line-height:22px;
+            }
+        }
+
+        }
+    &-btn-box{
+        padding: 44px 0px 0px;
+        text-align: right;
+        @media #{$sm-bp}{
+            padding: 34px 0px 0px;
+               }
+           }
+}
+

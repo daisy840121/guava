@@ -1,0 +1,59 @@
+extends ../layout/layout.pug
+
+block view
+    .breadcrumb-nav
+        ol.breadcrumb
+            li.breadcrumb-li 
+                a(href="./index.html") 首頁
+            li.breadcrumb-li 
+                a(href="./certificate.html") certificate
+            li.breadcrumb-li.breadcrumb-li-active 內容
+    .wrap
+        .certificate-detail-wrap
+            .certificate-detail-header
+                p.certificate-detail-date 27.03.2020
+                p.certificate-detail-title 農藥殘留檢驗報告
+                .certificate-detail-icon 
+                    a.mr-20(href="")
+                        img(src="../../assets/minfb.svg", alt="")
+                    a.mr-20(href="")  
+                        img(src="../../assets/bird.svg", alt="")
+                    a.mr-20(href="")
+                        img(src="../../assets/sinaeye.svg", alt="")
+            .certificate-detail-body
+                .certificate-pic-wrap
+                    .slider.certificate-pic-for
+                        div.certificate-for-pic
+                            img(src="../../assets/certificate/certificate1.jpeg", alt="")
+                        div.certificate-for-pic
+                            img(src="../../assets/certificate/certificate1.jpeg", alt="")
+                        div.certificate-for-pic
+                            img(src="../../assets/certificate/certificate1.jpeg", alt="")
+                        div.certificate-for-pic
+                            img(src="../../assets/certificate/certificate1.jpeg", alt="")
+                    .slider.certificate-pic-nav
+                        div.certificate-nav-pic
+                            img(src="../../assets/certificate/certificate1.jpeg", alt="")
+                        div.certificate-nav-pic
+                            img(src="../../assets/certificate/certificate1.jpeg", alt="")
+                        div.certificate-nav-pic
+                            img(src="../../assets/certificate/certificate1.jpeg", alt="")
+                        div.certificate-nav-pic
+                            img(src="../../assets/certificate/certificate1.jpeg", alt="")
+                .certificate-move-pic-wrap
+                    .slideshow
+                        .slide-placeholder
+                            img(src="../../assets/certificate/certificate1.jpeg", alt="")
+                        .slide-placeholder
+                            img(src="../../assets/certificate/certificate1.jpeg", alt="")
+                        .slide-placeholder
+                            img(src="../../assets/certificate/certificate1.jpeg", alt="")
+                        .slide-placeholder
+                            img(src="../../assets/certificate/certificate1.jpeg", alt="")
+                    span.pagingInfo
+                .certificate-detail-txt-wrap 
+                    p.certificate-detail-txt 行政院農業委員會</br>農業藥物毒物試驗所
+                    a.btn.certificate-detail-btn(href="") 檢驗報告 
+                .certificate-detail-squarebrackets
+                        .squarebrackets
+                            p.squarebrackets-txt 天然好吃芭樂</br>新鮮脆甜有保證

@@ -1,0 +1,65 @@
+form#joinForm(action="") 
+    .form-item
+        p.form-title 電子郵件
+        input.form-control(type="text" name="email" aria-label="email",required)
+    .form-item
+        span.col-lg-6.col-12 
+            p.form-title 性別
+                .d-flex
+                    .form-check
+                        input.form-check-input#male(type="radio" name="sex")
+                        label.form-check-label(for="male") 男性
+                            span.radio-button
+                    .form-check
+                        input.form-check-input#female(type="radio" name="sex")
+                        label.form-check-label(for="female") 女性
+                            span.radio-button
+        span.col-lg-6.half-right.col-12.form-move-pt
+            p.form-title 姓名
+            input.form-control(type="text" name="name" aria-label="name",required)
+    .form-item.test_btn
+        span.col-lg-4.col-12 
+            p.form-title 聯絡地址
+                .d-flex
+                    .form-check
+                        input.form-check-input#tw(type="radio" name="country")
+                        label.form-check-label(for="tw") 台灣
+                            span.radio-button
+                    .form-check
+                        input.form-check-input#abroad(type="radio" name="country")
+                        label.form-check-label(for="abroad") 國外
+                            span.radio-button
+        span.col-lg-8.col-12.align-self-end
+            include ./city.pug
+        span.col-lg-12.col-12.add-input
+            input.form-control(type="text" name="add" aria-label="add",required)
+    .form-item
+        span.col-lg-6.col-12.half-left 
+            p.form-title 聯絡電話
+            input.form-control(type="text" name="tel" aria-label="tel",required)
+        span.col-lg-6.col-12.half-right.form-move-pt 
+            p.form-title 行動電話
+            input.form-control(type="text" name="phone" aria-label="phone",required)
+    .form-item
+        p.form-title 設定密碼
+        input.form-control(type="text" name="password" aria-label="password",required)
+    .form-item
+        p.form-title 確認密碼
+        input.form-control(type="text" name="checkPassword" aria-label="checkPassword",required)
+    .form-item.el-wrap
+        .pullee-wrap
+            input.pullee(type="range" value="0")
+            .pullee_success
+                img(src="../../assets/check-solid.svg" alt="")
+            .pullee_error 
+                img(src="../../assets/sync-solid.svg" alt="")
+            .pullee-txt 向右滑動解鎖
+        button.btn.dark-btn.join-submit#join-submit(data-bs-toggle="modal" data-bs-target="#alerts") 確認送出
+        .modal.fade#alerts(tabindex="-1" aria-labelledby="alerts" aria-hidden="true")
+            .modal-dialog
+                .modal-content
+                    .modal-body.alerts-txt-warp
+                        p.alerts-txt 您已經成功加入會員
+                        //- p.alerts-txt 此帳號已被註冊，請重新輸入。
+                    .modal-footer
+                        a.alerts-btn(href="" type="button" data-bs-dismiss="modal") 關閉

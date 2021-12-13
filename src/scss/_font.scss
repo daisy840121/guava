@@ -1,0 +1,142 @@
+@mixin fontStyle_zh_200 {
+  font-family: "Gen Shin Gothic","Noto Sans TC";
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+@mixin fontStyle_zh_300 {
+  font-family: "Gen Shin Gothic","Noto Sans TC";
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+@mixin fontStyle_zh_400 {
+  font-family: "Gen Shin Gothic","Noto Sans TC";
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+@mixin fontStyle_zh_500 {
+  font-family: "Gen Shin Gothic","Noto Sans TC";
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+@mixin fontStyle_zh_700 {
+  font-family: "Gen Shin Gothic","Noto Sans TC";
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+@mixin fontStyle_ro_700 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+@mixin fontStyle_ro_500 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+@mixin fontStyle_ro_300 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+
+@mixin fontStyle_ro_200 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+@mixin fontStyle_ro_400 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+//------------------------------------
+.subtitle-title {
+  @include fontStyle_zh_300;
+  font-size: 24px;
+  @media #{$sm-bp} {
+    font-size: 19px;
+  }
+}
+
+.join-rule-page {
+  @include fontStyle_zh_300;
+  font-size: 24px;
+  @media #{$sm-bp} {
+    font-size: 14px;
+    font-weight: 400;
+    float: right;
+  }
+}
+
+.min-title {
+  @include fontStyle_zh_300;
+  font-size: 20px;
+  @media #{$sm-bp} {
+    font-size: 19px;
+  }
+}
+
+.form-title {
+  @include fontStyle_zh_400;
+  font-size: 18px;
+  padding-bottom: 8px;
+  @media #{$sm-bp} {
+    font-size: 14px;
+  }
+}
+
+.explanation-txt {
+  @include fontStyle_ro_500;
+  font-size: 16px;
+  @media #{$sm-bp} {
+    font-size: 12px;
+  }
+}
+
+.big-title {
+  @include fontStyle_ro_300;
+  font-size: 60px;
+  position: absolute;
+  border-bottom: 2px solid #000;
+  @media #{$xl-bp} {
+    font-size: 33px;
+  }
+}
+
+.big-top-title {
+  @include fontStyle_ro_300;
+  font-size: 60px;
+  position: absolute;
+
+  @media #{$lg-bp} {
+    font-size: 33px;
+  }
+}
+
+.big-title-pt {
+  padding-top: 156px;
+  @media #{$lg-bp} {
+    padding-top: 24px;
+  }
+}
+
+.subtitle-title-pt {
+  padding-top: 255px;
+  @media #{$lg-bp} {
+    padding-top: 77px;
+  }
+}

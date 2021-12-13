@@ -1,0 +1,158 @@
+.technique{max-width: 1440px;width: 100%; margin: auto;}
+.technique-warp{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.technique-item{
+    width: 50%;
+    max-width: 595px;
+    @media #{$lg-bp} {
+      width: 100%;
+      margin-top: 24px;
+     }
+}
+.technique-item-pr{
+    padding-right: 9px;
+}
+
+.technique-item-pl{
+    padding-left: 9px;
+}
+
+.technique-pic{
+    width: 100%;
+    max-width: 595px;
+    height: 306px;
+    padding-bottom: 40px;
+    @media #{$lg-bp} {
+        padding-bottom: 24px;
+     }
+    img{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.technique-txt-wrap-right{
+    @media #{$up1680} {
+        padding-left: 0px;
+     }
+    padding-left: 40.5px;
+    @media #{$lg-bp} {
+        padding-left: 0px;
+     }
+}
+
+.technique-tit-zh{
+    font-size: 28px;
+    line-height: 48px;
+    @include fontStyle_zh_200;
+    padding-bottom: 8px;
+    @media #{$lg-bp} {
+        font-size: 23px;
+        line-height: 33px;
+        font-weight: 500;
+     }
+}
+
+.technique-txt-zh{
+    font-size: 14px;
+    line-height: 24px;
+    @include fontStyle_zh_500;
+    padding-bottom: 16px;
+    @media #{$lg-bp} {
+        font-size: 12px;
+        line-height: 22px;
+     }
+
+}
+
+.technique-tit-en{
+    font-size: 26px;
+    line-height: 30px;
+    @include fontStyle_ro_500;
+    padding-bottom: 8px;
+    @media #{$lg-bp} {
+        font-size: 21px;
+       padding-top: 32px;
+     }
+}
+
+.technique-txt-en{
+    font-size: 16px;
+    line-height: 32px;
+    @include fontStyle_ro_500;
+    @media #{$lg-bp} {
+        font-size: 12px;
+     }
+}
+
+
+ .brand{
+    max-width: 1440px;width: 100%; margin: auto;
+    margin-top: 80px;
+ }
+.brand-wrap{
+    padding-top: 50px;
+    @media #{$lg-bp} {
+        padding-top: 24px;
+    }
+}
+.brand-pic{
+    width: 100%;
+    img{
+        width: 100%;
+        max-height: 488px;
+        object-fit: cover;
+    }
+}
+.brand-txt-wrap{
+    padding-top: 40px;
+}
+.brand-txt-zh{
+    font-size: 14px;
+    line-height: 24px;
+    @include fontStyle_zh_500;
+    padding-bottom: 40px;
+    @media #{$lg-bp} {
+        padding-bottom: 32px;
+    }
+}
+
+.brand-txt-en{
+    font-size: 12px;
+    line-height: 32px;
+    @include fontStyle_ro_500;
+    @media #{$lg-bp} {
+       padding-bottom: 40px;
+    }
+}
+
+.about-move-squarebrackets{
+    @media #{$lg-bp} {
+        display: none;
+    }
+}
+
+.read-more-wrap{
+    @media #{$lg-bp} {
+        display: none;
+    }
+} 
+
+.about-pc-squarebrackets{
+    width: 100%;
+//    padding-bottom: 104px;
+    @media #{$up992} {
+        display: none;
+    }
+}
+
+// .technique-title{
+//     @media #{$lg-bp} {
+//         margin-bottom: 24px;
+//     }
+// }

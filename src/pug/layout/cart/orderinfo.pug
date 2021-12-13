@@ -1,0 +1,35 @@
+.cart-info-box
+    .cart-info-tit 訂購人資料
+    form#order-info(action="") 
+        .form-item
+            span.col-lg-2
+                p.form-title 稱呼
+                    .d-flex
+                        .form-check
+                            input.form-check-input#male(type="radio", name="sex")
+                            label.form-check-label(for="male") 男性
+                                span.radio-button
+                        .form-check
+                            input.form-check-input#female(type="radio", name="sex")
+                            label.form-check-label(for="female") 女性
+                                span.radio-button
+            span.col-lg-4.half-left-8.col-12
+                p.form-title 訂購人姓名
+                input.form-control(type="text",name="name" aria-label="name",required)
+            span.col-lg-6.half-right-8.col-12
+                p.form-title 聯絡電話(選填)
+                input.form-control(type="text",name="tel" aria-label="tel",required)
+        .form-item
+            span.col-lg-6.half-left-8.col-12
+                p.form-title 行動電話
+                input.form-control(type="text",name="phone" aria-label="phone",required)
+            span.col-lg-6.half-right-8.col-12
+                p.form-title 電子信箱
+                input.form-control(type="text",name="email" aria-label="email",required)    
+        .form-item
+            span.col-lg-6.half-left-8.col-12
+                p.form-title 郵遞區號
+                input.form-control(type="text",name="postalCode" aria-label="postalCode",required)
+            span.col-lg-6.half-right-8.col-12
+                p.form-title 聯絡地址
+                input.form-control(type="text",name="add" aria-label="add",required)    

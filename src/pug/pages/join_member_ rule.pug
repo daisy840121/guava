@@ -1,0 +1,32 @@
+extends ../layout/layout.pug
+
+block view
+    .breadcrumb-nav
+        ol.breadcrumb
+            li.breadcrumb-li 
+                a(href="./index.html") 首頁
+            li.breadcrumb-li 
+                a(href="./join.html") 會員註冊
+            li.breadcrumb-li.breadcrumb-li-active 加入會員須知
+    .wrap   
+        .col-lg-11.pl-wrap
+            p.join-member-rule-title 加入會員須知
+            p.join-member-rule-subtitle 本網站上的會員資料與交易資料皆為提供芭樂家族商品訂單所使用，我們將保留您的資料，並保護您的資料安全。 註冊時，請您同意以下會員條款：
+            div.join-member-rule-txt
+                p.join-member-rule-txt-content 為了您的會員資料安全起見，請勿將您的帳號密碼，透露給第三人。
+                p.join-member-rule-txt-content 為了訂單與活動贈品寄件正確，請您確定您的會員資料皆為最新、正確的資料，若發現資料錯誤，並且訂單進行中 ，請務必立即更改您的資料，並來電告知。
+                p.join-member-rule-txt-content 若您的資料變更，請盡速登入會員，並修改最正確的會員資料。
+                p.join-member-rule-txt-content 嚴禁會員使用假的姓名、電話、地址等資料，經查屬實，本公司將列為黑名單，並有權將其資料與會員資格一律刪除。若事態嚴重，並危及安全性、其他會員權益，將報警處理。
+                p.join-member-rule-txt-content 基於保障個人隱私權，您於本網站所註冊輸入的資料，本公司將保證，您的資料不會由本公司主動透露給第三者得 知，並保護您的會員資料安全。
+                p.join-member-rule-txt-content 為了保障雙方買賣權益，會員在選購商品時，請勿隨意造假或刻意製造錯誤訂單，若事態嚴重，將採警方管道處理 。
+                p.join-member-rule-txt-content 本著互惠互信的網路購物原則，若惡意拋單、拒絕付款或故意欺騙等不法行為產生，本網站有權取消會員資格與訂 單，該會員必須負起賠償責任。
+                p.join-member-rule-txt-content 會員在本網站進行交易時，如有糾紛發生時，以本網所提供之電子交易資料為認定的標準。
+                p.join-member-rule-txt-content 會員不得自行竊取網站資料，並無權力將網站所屬版權圖、文內容，惡意或在無告知情況下，任意曝光於有交易行 為的網頁(站)中，若經查屬實，將採取法律途徑處理。
+                p.join-member-rule-txt-content 會員不得並嚴禁以任何方式或途徑，企圖破壞或干擾本網站所屬訂單作業、活動、或任何網站資原，若經查屬實， 將採法律途徑處理。
+                p.join-member-rule-txt-content 會員在進行網站活動或交易時，請遵守本條款與網站上的訂購、活動說明。
+                p.join-member-rule-txt-content 本同意書若有經修改或變更內容，將由公布當天逕自生效，無須個別通知會員。
+                p.join-member-rule-txt-content 各項商品及勞務之交易及本同意書未約定之事項，以中華民國法律及相關法令、規章、慣例為依據處理。如有發生 糾紛時，以台灣台中地方法院為第一審管轄法。
+        .col-lg-11.pl-wrap.join-member-rule-btn-box
+            a.btn.light-btn.mr-20(href="./index.html") 取消註冊
+            a.btn.dark-btn(href="./join.html")  同意條款  
+            

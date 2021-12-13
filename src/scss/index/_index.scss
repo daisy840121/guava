@@ -1,0 +1,79 @@
+.squarebrackets{
+    position: relative;
+    width: 313px;
+    height: 96px;
+    @media #{$md-bp} {
+      width:205px;
+      // margin-left: 15px;
+    }
+    &::after {
+      content: "[";
+      position: absolute;
+      left: 0;
+      font-family: "Roboto","Noto Sans TC";
+      font-weight: 100;
+      font-size: 82px;
+      line-height: 96px;
+      letter-spacing: 1px;
+      @media #{$md-bp} {
+          font-size: 52px;
+        }
+    }
+    &::before {
+      content: "]";
+      position: absolute;
+      right: 0;
+      font-family: "Roboto","Noto Sans TC";
+      font-weight: 100;
+      font-size: 82px;
+      line-height: 96px;
+      @media #{$md-bp} {
+          font-size: 52px;
+        }
+    }
+}
+
+.squarebrackets-txt {
+  top: 50%;
+  left: 35%;
+  line-height: 34px;
+  transform: translate(-25%, -50%);
+  position: absolute;
+  @include fontStyle_zh_200;
+  font-size: 28px;
+  text-align: center;
+  @media only screen and (min-width :768px) and (max-width : 1265px){
+  font-size: 26px;
+}
+  @media #{$md-bp} {
+    font-size: 18px;
+  }
+}
+
+.index-move-link{
+  font-size: 24px;
+  line-height: 34px;
+  color: #212121;
+  @include fontStyle_zh_300;
+  &:hover{
+      color: #003C13;
+  }
+  @media #{$md-bp} {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+  }
+}
+
+.index-move-link-wrap{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  @media #{$xl-bp}{
+   width:36%;
+   align-items: center;
+}
+@media #{$xs-bp} {
+  width: 100%;
+}
+}

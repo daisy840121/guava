@@ -1,0 +1,143 @@
+.toggle-password{
+z-index: 200;
+position:absolute;
+right: 20px;
+top: 18px;
+}
+
+.login-box{
+    width: 594px;
+    height: 572px;
+    @media #{$sm-bp}{
+        width: 342px;
+        height: 518px;
+    }
+    &-body{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    &-content{
+        width: 388px;
+        @media #{$sm-bp}{
+            width: 289px;
+        }
+    }
+    &-title{
+        font-family: "Roboto","Noto Sans TC";
+        font-weight: 500;
+        font-size: 26px;
+        line-height:30px;
+        letter-spacing: 1px;
+        padding-bottom: 40px;
+        @media #{$sm-bp}{
+            font-size: 21px;
+            padding-bottom: 12px;
+        }
+    }
+    &-btn-close{
+        left: 29px;
+        top: 29px;
+        width: 14px;
+        height: 14px;
+        @media #{$sm-bp}{
+        left: 13px;
+        top: 13px;
+        }
+    }
+    &-item{
+        padding-bottom: 8px;
+    }
+
+    &-forget-password{
+        text-align: right;
+        width: 100%;
+        font-family:"Gen Shin Gothic";
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    &-link{
+        @media #{$sm-bp}{
+            img{
+                width: 25px;
+                height: 25px;
+            }
+            }
+    }
+
+    &-btn-wrap{
+        padding: 22px 0px 40px;
+    }
+
+    &-btn{
+        @include fontStyle_zh_300;
+        width:100%;
+        height: 42px;
+        @include  dark-btn;
+        font-size: 20px;
+        line-height: 42px;
+        text-align: center;
+        border-radius: 100px;
+        @media #{$sm-bp}{
+            font-size: 14px;
+            height: 40px;
+            line-height: 40px;
+            }
+    }
+
+    &-icon-wrap{
+        width: 100%;
+        display: flex;
+        justify-content: space-between; 
+        padding-bottom: 26px;
+        @media #{$sm-bp}{
+            padding-bottom: 32px;
+            }
+    }
+
+    
+    &-link-inner{
+        display: flex;
+        justify-content: center;
+        &-txt{
+            @include fontStyle_zh_500;
+            font-size: 20px;
+            padding-right: 15px;
+            color: rgba(0, 0, 0, 0.5);
+            @media #{$sm-bp}{
+                font-size: 16px;
+                }
+            }
+        &-join{
+            @include fontStyle_zh_300;
+            font-size: 20px;
+            padding-left: 15px;
+            color: #00683A; 
+            &:hover{
+               color: #419765;
+            }
+            @media #{$sm-bp}{
+                font-size: 14px;
+                }
+        }
+        } 
+    }
+
+
+.modal-dialog{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.modal{
+    top: 15%;
+    left: -2%;
+}
+
+
+

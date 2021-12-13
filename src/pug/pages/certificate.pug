@@ -1,0 +1,43 @@
+extends ../layout/layout.pug
+
+block view
+    .breadcrumb-nav
+        ol.breadcrumb
+            li.breadcrumb-li 
+                a(href="./index.html") 首頁
+            li.breadcrumb-li.breadcrumb-li-active certificate
+    .wrap
+        .pl-wrap
+            .certificate-title
+                p.big-title CERTIFICATE
+                p.subtitle-title.certificate-subtitle  有機證書
+            .certificate-content
+                ul.certificate-filter
+                    li.btn.dark-btn.mr-20.certificate-filter-btn.btn-active 所有證書
+                    li.btn.dark-btn.mr-20.certificate-filter-btn 水果有機認證   
+                    li.btn.dark-btn.mr-20.certificate-filter-btn 包裝安全證書
+                .certificate-squarebrackets
+                    .squarebrackets
+                        p.squarebrackets-txt 天然好吃芭樂</br>新鮮脆甜有保證
+                .certificate-list
+                    a.certificate-item(href="./certificate_detail.html")
+                        .certificate-pic
+                            img(src="../../assets/certificate/certificate1.jpeg", alt="")
+                        .certificate-txt-wrap 
+                            .certificate-list-title 農業殘留檢驗報告
+                            .certificate-list-date 110.02.01
+                            .certificate-list-txt 蔬菜農藥殘留檢驗報告
+                    a.certificate-item(href="./certificate_detail.html")
+                        .certificate-pic
+                            img(src="../../assets/certificate/certificate1.jpeg", alt="")
+                        .certificate-txt-wrap 
+                            .certificate-list-title 農業殘留檢驗報告
+                            .certificate-list-date 110.02.01
+                            .certificate-list-txt 蔬菜農藥殘留檢驗報告
+                    a.certificate-item(href="./certificate_detail.html")
+                        .certificate-pic
+                            img(src="../../assets/certificate/certificate1.jpeg", alt="")
+                        .certificate-txt-wrap 
+                            .certificate-list-title 農業殘留檢驗報告
+                            .certificate-list-date 110.02.01
+                            .certificate-list-txt 蔬菜農藥殘留檢驗報告

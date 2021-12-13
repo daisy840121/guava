@@ -1,0 +1,121 @@
+.faq-title{
+padding-top: 156px;
+@media #{$lg-bp}{
+    padding-top: 40px;
+    }
+}
+
+.faq-subtitle{
+    padding-top: 93px;
+    @media #{$lg-bp}{
+        padding-top: 52px;
+        }
+}
+
+.faq-filter{
+    padding-top: 74px;
+    overflow: scroll;
+    white-space: nowrap;
+    @media #{$lg-bp}{
+        padding-top: 40px;
+        }
+}
+
+.faq-wrap{
+    min-height: 100vh;
+    // padding-bottom: 104px;
+}
+
+.accordion {
+    margin-top: 40px;
+    max-width:1004px;
+    width: 100%;
+    .accordion-item {
+        border: none;
+    .accordion-title {
+        color: #000;
+        transition: 0.5s;
+        cursor: pointer;
+        position: relative;
+        padding: 12px 30px;
+        border-bottom: 1px solid rgba(0,0,0,0.25);
+        @media #{$xxs-bp} {
+            padding: 12px 10px;
+        }
+        &:after {
+            content: url("../assets/faq/uparrow.png");
+            position: absolute;
+            color: #000;
+            right: 1rem;
+            transition: transform 0.5s ease-in;
+        }
+    }
+
+    .accordion-content {
+        position: relative;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        overflow-y: hidden;
+        transition: all 0.5s ease-in;
+    }
+
+    &.active {
+      .accordion-title {
+        &:after {
+          transform: rotate(180deg);
+          transition: transform 0.5s ease-in;
+        }
+      }
+      .accordion-content {
+        height: auto;
+        opacity: 1;
+        transition: all 0.5s ease-in;
+      }
+    }
+  }
+}
+
+.faq-num{
+    @include fontStyle_ro_500;
+    font-size: 26px;
+    line-height: 30px;
+    @media #{$lg-bp}{
+        font-size: 21px;
+        }
+}
+
+.accordion-content-txt {
+    padding: 16px 0px 14px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    img{
+        padding-right: 42px;
+        padding-bottom: 26px;
+    }
+    p{
+        width: 100%;
+        max-width: 562px;
+        display: block;
+        @include fontStyle_zh_400;
+        font-size: 14px;
+        line-height: 24px;
+        padding:0px 16px 0px 0px;
+        @media #{$ssmm-bp}{
+            padding-bottom: 50px;
+            }
+    }
+}
+.faq-txt{
+    @include fontStyle_zh_300;
+    font-size: 24px;
+    line-height: 30px;
+    padding-left: 34px;
+    @media #{$lg-bp}{
+        font-size: 19px;
+        }
+    @media #{$xxs-bp} {
+        padding-left: 20px;
+    }
+}

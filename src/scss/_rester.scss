@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box !important;
+}
+
+html, body, main {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+.wrap {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 104px;
+    min-height: calc(100% - 344px) !important; /*減去footer高度*/
+    @media only screen and (min-width : 993px) and (max-width : 1280px){
+        max-width: calc(100% - 130px);
+    }
+    @media only screen and (min-width :1281px) and (max-width : 1920px){
+        max-width: calc(100% - 265px);
+      }
+    @media (min-width : 1921px){
+    max-width:1655px;
+    }
+    @media #{$sm-bp} {
+    min-height: calc(100% - 184px) !important; /*減去footer高度*/
+    }
+    @media #{$lg-bp}{
+        padding: 0px 16px 104px;
+        }
+}
+.footer {
+height: 344px; /*設定footer本身高度*/
+    @media #{$sm-bp} {
+        height:184px;
+    }
+}
+  
+img {
+    vertical-align: middle;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    cursor:pointer;
+    &:hover{
+        color: #003C13;
+    }
+}
+
+ol,
+ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.clearFloat {
+    clear: both;
+}
+
+p {
+ margin-bottom: 0;
+}
+
+button{
+    &:hover,&:focus{
+        outline:0 transparent !important;
+        box-shadow: none !important;
+    }
+}

@@ -1,0 +1,156 @@
+
+.product-title {
+  padding-top: 145px;
+  @media #{$lg-bp}{
+    padding-top:40px;
+    }
+}
+
+.product-subtitle-title {
+  padding-top: 182px;
+  @media #{$lg-bp}{
+    padding-top:100px;
+    }
+}
+
+.product-filter {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: scroll;
+    white-space: nowrap;
+    padding-top: 40px;
+}
+
+.product-filter-btn {
+    margin-bottom: 4px;
+}
+.product-advantage {
+  display: flex;
+  padding-top: 20px;
+  @media #{$lg-bp}{
+    padding-top:16px;
+    overflow: scroll;
+    white-space: nowrap;
+    }
+}
+
+.product-list {
+  width: 100%;
+  max-width: 1025px;
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-item {
+  width: 100%;
+  max-width: 239.25px;
+  position: relative;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 5px 5px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+ @media #{$ssm-bp} {
+   width: 100%;
+   max-width: 100%;
+   margin-right: 0px;
+ }
+}
+
+.product-pic {
+  width: 100%;
+  height: 244px;
+  img {
+    width: 100%;
+    height: 244px;
+    object-fit:cover;
+
+  }
+}
+
+.product-tag {
+  top: 10px;
+  left: 10px;
+  position: absolute;
+}
+@mixin advantage-btn {
+  padding: 8px 24px;
+  font-size: 14px;
+  line-height: 24px;
+  margin-right: 8px;
+  @include fontStyle_zh_700;
+  @media #{$ssm-bp} {
+    padding: 2px 24px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.advantage-btn {
+  background-color: #00683a;
+  color: #fff;
+  @include advantage-btn;
+  &:hover {
+    color: #fff;
+  }
+}
+.advantage-btn-no {
+  border: 1px solid #00683a;
+  color: #00683a;
+  @include advantage-btn;
+  &:hover {
+    color: #00683a;
+  }
+}
+
+.advantage-tag {
+  padding: 4px 8px;
+  font-size: 12px;
+  line-height: 22px;
+  margin-right: 8px;
+  background-color: #00683a;
+  color: #fff;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.product-txt-wrap {
+  a,p {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+.product-tit {
+  font-size: 28px;
+  line-height: 48px;
+  padding: 16px 0px 8px;
+  @include fontStyle_zh_300;
+}
+
+.product-price {
+  font-size: 20px;
+  line-height: 32px;
+  padding-bottom: 8px;
+  @include fontStyle_ro_500;
+}
+
+.product-origin {
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 16px;
+  @include fontStyle_ro_700;
+}
+
+.product-squarebracket {
+  padding: 80px 0px 0px;
+  width: 100%;
+  max-width: 1025px;
+  display: flex;
+  justify-content: end;
+  @media #{$xl-bp} {
+      padding:40px 0px 0px; ;
+      justify-content: start;
+  }
+}

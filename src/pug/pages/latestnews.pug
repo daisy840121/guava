@@ -1,0 +1,23 @@
+extends ../layout/layout.pug
+
+block view
+    .breadcrumb-nav
+        ol.breadcrumb
+            li.breadcrumb-li 
+                a(href="./index.html") 首頁
+            li.breadcrumb-li.breadcrumb-li-active Latest News
+    .wrap
+        .pl-wrap.news-filter-wrap
+            .news-bigtitle
+                p.big-title LATEST</br>NEWS
+                p.subtitle-title.advantage-pt 專欄推播
+            ul.news-filter
+                li.btn.dark-btn.mr-20.news-filter-btn.btn-active 所有訊息
+                li.btn.dark-btn.mr-20.news-filter-btn 食譜專欄    
+                li.btn.dark-btn.mr-20.news-filter-btn 芭樂文獻
+                li.btn.dark-btn.mr-20.news-filter-btn 活動資訊
+            .news-filter-squarebrackets
+                .squarebrackets
+                    p.squarebrackets-txt 掌握第一手</br>芭樂公告與優惠
+            .news-wrap
+                include ../layout/newsitem.pug

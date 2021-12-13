@@ -1,0 +1,74 @@
+extends ../layout/layout.pug
+
+block view
+    .breadcrumb-nav
+        ol.breadcrumb
+            li.breadcrumb-li 
+                a(href="./index.html") 首頁
+            li.breadcrumb-li.breadcrumb-li-active 關於我們
+    .wrap.about-wrap
+        .about-title 
+            p.big-title ABOUT US
+            p.subtitle-title.about-subtitle-title  關於我們
+        .pl-wrap
+            .about-btn
+                a.green-btn-active.mr-20(href="./idea.html") 品牌經營理念
+                a.btn.dark-btn(href="./about.html")  關於芭樂家族
+            .col-lg-12.about-content
+                .col-lg-8.idea-pic-wrap.about-move-2
+                    .idea-pic-item 
+                        .idea-pic-txt
+                            p 生態 
+                        .idea-pic
+                            img(src="../../assets/about/Ecology.png", alt="")
+                    .idea-pic-item 
+                        .idea-pic-txt
+                            p 生產 
+                        .idea-pic
+                            img(src="../../assets/about/Production.png", alt="")
+                    .idea-pic-item 
+                        .idea-pic-txt
+                            p 生活 
+                        .idea-pic
+                            img(src="../../assets/about/life.png", alt="")
+                .col-lg-4.about-description.about-move-1
+                    .about-description-item 
+                        .about-description-tit  
+                            p 三生
+                        .about-description-txt 
+                            .about-description-txt-header 
+                                p 生態｜生產｜生活
+                            .about-description-txt-footer 
+                                p 用自然生態的方式來生產安全的食物，並融入到我們的生活之中
+                .col-lg-8.idea-pic-wrap.about-move-4
+                    .idea-pic-item 
+                        .idea-pic-txt
+                            p 培育 
+                        .idea-pic
+                            img(src="../../assets/about/nurture.png", alt="")
+                    .idea-pic-item 
+                        .idea-pic-txt
+                            p 保育 
+                        .idea-pic
+                            img(src="../../assets/about/childcare.png", alt="")
+                    .idea-pic-item 
+                        .idea-pic-txt
+                            p 教育 
+                        .idea-pic
+                            img(src="../../assets/about/educate.png", alt="")
+                .col-lg-4.about-description.about-move-3
+                    .about-description-item 
+                        .about-description-tit  
+                            p 三育
+                        .about-description-txt 
+                            .about-description-txt-header 
+                                p 培育｜保育｜教育
+                            .about-description-txt-footer 
+                                p 用心培育環境並做好生態保育，教育我們的下一代永續的重要性
+                .col-lg-12.about-squarebrackets
+                    .about-pc-title 
+                        p.big-title ABOUT US
+                        p.subtitle-title.about-subtitle-title  關於我們
+                    .squarebrackets
+                        p.squarebrackets-txt 天然好吃芭樂</br>新鮮脆甜有保證
+                

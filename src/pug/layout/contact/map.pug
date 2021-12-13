@@ -1,0 +1,23 @@
+.contactus-map
+    span.add-marker-info 
+        .marker
+            img(src="../../assets/contact/marker.png", alt="")
+        p.add-marker-txt 台中市太平區永成北路403號
+    #map
+
+    link(href="https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css", rel="stylesheet")
+    script(src="https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js")
+    script.
+        mapboxgl.accessToken = 'pk.eyJ1IjoibXluYW1laXNibG9zc29tIiwiYSI6ImNrd2VmNHdzaTA0NGYzMHFiNnd1N2o0M2oifQ.r-OPrq_m2OG-Qfvr3EIdGA';
+        const map = new mapboxgl.Map({
+            container: 'map', // container ID
+            style: 'mapbox://styles/mapbox/streets-v11', // style URL
+            center: [120.7196763,24.1210767], // starting position [lng, lat]
+            zoom: 17 // starting zoom
+        });
+        map.scrollZoom.disable();//禁止縮放
+    //-   const marker = new mapboxgl.Marke
+    //-     color: "#000",
+    //-     draggable: true
+    //-     }).setLngLat([121.1564843,24.0440707]).setPopup(new mapboxgl.Popup().setHTML("<h1>Hello World!</h1>"))
+    //-     .addTo(map);

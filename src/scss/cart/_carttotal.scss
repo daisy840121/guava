@@ -1,0 +1,98 @@
+.cart-info-total{
+background: #212121;
+color: #fff;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px 10px 0px 0px;
+padding: 24px 50px;
+font-size: 24px;
+line-height: 34px;
+@include fontStyle_zh_300;
+margin-top: 32px;
+@media #{$lg-bp} {
+ margin-top: 16px;
+ }   
+}
+
+.cart-info-total-box{
+    padding: 34px 50px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    @media #{$lg-bp} {
+        padding: 44px 29px;
+        // margin-bottom: 16px;
+     }    
+}
+
+
+.total{
+    &-item{
+        padding-bottom: 16px;
+    }
+    &-title{
+        font-size: 18px;
+        line-height: 31px;
+        @include fontStyle_zh_400;
+        padding-bottom:2px;
+        @media #{$lg-bp} {
+            font-size: 14px;
+          }
+    }
+    &-txt{
+        font-size: 20px;
+        padding-top: 2px;
+        line-height: 34px;
+        @include fontStyle_ro_400;
+        @media #{$lg-bp} {
+            font-size: 16px;
+          }
+    } 
+}
+
+
+.total-footer{
+    margin-top: 16px;
+    padding-top: 32px;
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.total-footer-txt-title{
+    font-size: 12px;
+    line-height: 22px;
+    @include fontStyle_zh_400;
+    @media #{$lg-bp} {
+        width: 100%;
+      }
+}
+
+.total-footer-txt-price{
+    color:#00683A;
+    font-size: 21px;
+    line-height: 30px;
+    @include fontStyle_ro_500;
+    padding-left: 8px;
+}
+
+.total-footer-btn{
+    display: flex;
+    justify-content: flex-end;
+    @media #{$lg-bp} {
+        width: 100%;
+        padding-top: 16px;
+      }
+}
+
+.goshopping{
+    margin-right: 20px;
+    @media #{$lg-bp} {
+        margin-right: 8px;
+      }
+}
+
+.total-item-move-hide{
+    @media #{$lg-bp} {
+        display: none;
+      }
+}

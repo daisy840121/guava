@@ -1,0 +1,33 @@
+.form{
+    &-item{
+        width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 24px 0px;
+    @media #{$lg-bp}{
+        padding:5px 0px;
+        }
+    }
+    &-title{
+        margin-top: 16px;
+        @media #{$lg-bp}{
+            margin-top: 8px;
+            }
+    }
+
+    // &-check{
+    //     margin-right: 9px;
+    // }
+
+    &-check-label{
+        font-family:"Gen Shin Gothic";
+        font-size: 14px;    
+        letter-spacing: 1px;
+        color: #333333;
+    }
+  }
+
+  .product-squarebrackets{
+      position: absolute;
+      bottom: 0;
+  }

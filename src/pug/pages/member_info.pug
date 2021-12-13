@@ -1,0 +1,20 @@
+extends ../layout/layout.pug
+
+block view
+    .breadcrumb-nav
+        ol.breadcrumb
+            li.breadcrumb-li 
+                a(href="./index.html") 首頁
+            li.breadcrumb-li.breadcrumb-li-active 會員中心
+    .wrap
+        .pl-wrap
+            .col-lg-4.col-8
+                p.big-title.big-title-pt MEMBER
+                p.subtitle-title.subtitle-title-pt 會員中心
+        .pl-wrap.member-info-btn-box
+            a.green-btn-active.mr-20(href="./member_info.html") 會員資料修改
+            a.btn.dark-btn(href="./shopping_history.html")  購物紀錄
+        .pl-wrap
+            .col-lg-11.joinForm
+                .col-lg-10.content
+                    include ../layout/member/form.pug

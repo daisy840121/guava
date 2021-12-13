@@ -1,0 +1,82 @@
+extends ../layout/layout.pug
+
+block view
+    .breadcrumb-nav
+        ol.breadcrumb
+            li.breadcrumb-li 
+                a(href="./index.html") 首頁
+            li.breadcrumb-li.breadcrumb-li-active 會員註冊
+    .wrap
+        .pl-wrap.col-lg-11
+            p.big-title.big-title-pt.cart-big-tit SHOPPING</br>CART
+            p.subtitle-title.cart-subtitle-title 購物結帳
+        .pl-wrap.col-lg-11.cart-sop-timeline
+            span.cart-sop-timeline-item
+                .cart-icon
+                    include ../layout/cart/penicon.pug
+                .cart-txt
+                    span.cart-num STEP 01
+                    p.cart-num-txt 填寫訂單資訊
+            span.cart-sop-timeline-item.cart-active
+                .cart-icon
+                    include ../layout/cart/tickicon.pug
+                .cart-txt
+                    span.cart-num STEP 02
+                    p.cart-num-txt 完成訂購
+        .pl-wrap.col-lg-11
+            .cart-info-box
+                .cart-info-tit 結帳須知
+                .cart_finish_order_info
+                    .shopping-history-item-right
+                        span.shopping-history-title 狀態
+                        p.shopping-history-state 新單
+                    .shopping-history-item-left
+                        span.shopping-history-title 訂單編號
+                        a.shopping-history-code(href="") W2020109270001
+                .cart-finish-inner 
+                    p.cart-finish-txt 親愛的000先生，感謝您向本公司訂購。您的訂單明細已同步發送至您的信箱。歡迎使用[訂單查詢]功能查詢目前訂單狀態，謝謝。
+            .cart-info-box
+                .cart-info-tit 訂購須知
+                .cart-finish-inner
+                    p.cart-finish-txt 商品已完成訂購
+            include ../layout/cartfinish/orderfinishitem.pug
+            include ../layout/cartfinish/oredrfinidhpay.pug
+            .cart-info-box
+                .cart-info-tit 統一發票
+                .cart-finish-inner 
+                    p.cart-finish-txt 二聯式紙本發票
+            .cart-info-box
+                .cart-info-tit 訂購人資料
+                form#order-info(action="") 
+                    .form-item
+                        span.col-lg-2
+                            p.form-title 稱呼
+                                .d-flex
+                                    .form-check
+                                        input.form-check-input#male(type="radio", name="sex",checked)
+                                        label.form-check-label(for="male") 男性
+                                            span.radio-button
+                                    .form-check
+                                        input.form-check-input#female(type="radio", name="sex",disabled)
+                                        label.form-check-label(for="female") 女性
+                                            span.radio-button
+                        span.col-lg-4.half-left-8.col-12
+                            p.form-title 訂購人姓名
+                            input.form-control(type="text",name="name" aria-label="name",disabled,placeholder="王小明" )
+                        span.col-lg-6.half-right-8.col-12
+                            p.form-title 聯絡電話(選填)
+                            input.form-control(type="text",name="tel" aria-label="tel",disabled)
+                    .form-item
+                        span.col-lg-6.half-left-8.col-12
+                            p.form-title 行動電話
+                            input.form-control(type="text",name="phone" aria-label="phone",disabled,placeholder="0902-123-456")
+                        span.col-lg-6.half-right-8.col-12
+                            p.form-title 電子信箱
+                            input.form-control(type="text",name="email" aria-label="email",disabled,placeholder="i_love_guava@gmail.com")    
+                    .form-item
+                        span.col-lg-6.half-left-8.col-12
+                            p.form-title 郵遞區號
+                            input.form-control(type="text",name="postalCode" aria-label="postalCode" ,disabled,placeholder="100")
+                        span.col-lg-6.half-right-8.col-12
+                            p.form-title 聯絡地址
+                            input.form-control(type="text",name="add" aria-label="add",disabled,placeholder="台北市信義區快樂路168號")   

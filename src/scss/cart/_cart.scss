@@ -1,0 +1,126 @@
+.cart{
+    &-big-tit{
+      text-align: center;
+      @media #{$lg-bp} {
+        text-align: left;
+       }
+    }
+    &-subtitle-title {
+        padding-top: 343px;
+        @media #{$lg-bp} {
+         padding-top: 128px;
+      }
+      }
+    &-sop-timeline {
+        padding-top: 133px;
+        display: flex;
+        @media #{$lg-bp} {
+          padding-top: 72px;
+       }
+      } 
+
+    &-sop-timeline-item {
+        display: flex;
+        align-items: center;
+    }
+
+    &-icon{
+        padding-right: 9px;
+        svg{
+          @media #{$lg-bp} {
+            width: 30px;
+            height: 30px;
+           }
+        } 
+    }
+
+    &-txt{
+        padding-right: 16px;
+    }
+
+    &-num {
+        font-size: 16px;
+        line-height: 20px;
+        @include fontStyle_ro_500;
+        @media #{$lg-bp} {
+          font-size: 14px;
+         }
+         @media #{$xxs-bp}{
+           font-size: 12px;
+         }
+      }
+
+    &-num-txt {
+        font-size: 20px;
+        line-height: 20px;
+        @include fontStyle_zh_200;
+        @media #{$lg-bp} {
+          font-size: 18px;
+         }
+         @media #{$xxs-bp}{
+          font-size: 16px;
+        }
+        }
+
+
+    &-active {
+        .cart-icon {
+          svg {
+            color: #00683a;
+          }
+        }
+        .cart-txt {
+          span {
+            color: #00683a;
+          }
+          p {
+            color: #00683a;
+          }
+        }
+      } 
+
+    &-info{
+        &-box{
+            padding: 34px 50px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            margin-top: 16px;
+            // margin-bottom: 32px;
+            @media #{$lg-bp} {
+              padding: 40px 26px;
+              // margin-bottom: 16px;
+           }
+        }
+        &-tit{
+            font-size: 24px;
+            line-height: 34px;
+            padding-bottom: 42px;
+            @include fontStyle_zh_300;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+            @media #{$lg-bp} {
+              font-size: 19px ;
+              padding-bottom:16px;
+           }
+        }
+        &-txt{
+            padding-top: 42px;
+            @media #{$lg-bp}{
+              padding-top: 16px;
+            }
+
+            &-content{
+                line-height: 32px;
+                padding-bottom: 28px;
+                @media #{$lg-bp}{
+                  font-size: 12px;
+                  line-height: 22px;
+                  padding-bottom: 16px;
+                }
+            }
+        }
+    }
+}
+
+
+
+

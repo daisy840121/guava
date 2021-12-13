@@ -1,0 +1,73 @@
+extends ../layout/layout.pug
+
+block view
+    .breadcrumb-nav
+        ol.breadcrumb
+            li.breadcrumb-li 
+                a(href="./index.html") 首頁
+            li.breadcrumb-li.breadcrumb-li-active Our Products
+    .wrap
+        .pl-wrap
+            .product-title
+                p.big-title FRESH</br>PRODUCTS
+                p.subtitle-title.product-subtitle-title  嚴選產品
+            ul.product-filter
+                li.btn.dark-btn.mr-20.product-filter-btn.btn-active 所有商品
+                li.btn.dark-btn.mr-20.product-filter-btn 紅心芭樂    
+                li.btn.dark-btn.mr-20.product-filter-btn 帝王芭樂
+                li.btn.dark-btn.mr-20.product-filter-btn 珍珠芭樂
+                li.btn.dark-btn.mr-20.product-filter-btn 水晶芭樂
+                li.btn.dark-btn.mr-20.product-filter-btn 香水芭樂 
+                li.btn.dark-btn.mr-20.product-filter-btn 牛奶芭樂
+            ul.product-advantage
+                li.btn.advantage-btn 季節限定
+                li.btn.advantage-btn 有機轉型驗證
+                li.btn.advantage-btn-no 有機認證
+            ul.product-list
+                li.product-item
+                    .product-tag
+                        .btn.advantage-tag 季節限定
+                        .btn.advantage-tag 有機轉型驗證
+                    .product-pic
+                        a(href="./prd_detail.html")
+                            img(src="../../assets/product/product1.jpeg", alt="")
+                    .product-txt-wrap 
+                        a.product-tit(href="./prd_detail.html") 紅心芭樂
+                        p.product-price [  25 NTD  ]
+                        p.product-origin 原產地：台灣
+                li.product-item
+                    .product-tag
+                        .btn.advantage-tag 季節限定
+                        .btn.advantage-tag 有機轉型驗證
+                    .product-pic
+                        a(href="./prd_detail.html") 
+                            img(src="../../assets/product/product2.jpeg", alt="")
+                    .product-txt-wrap 
+                        a.product-tit(href="./prd_detail.html") 紅心芭樂
+                        p.product-price [  25 NTD  ]
+                        p.product-origin 原產地：台灣
+                li.product-item
+                    .product-tag
+                        .btn.advantage-tag 季節限定
+                        .btn.advantage-tag 有機轉型驗證
+                    .product-pic
+                        a(href="./prd_detail.html")
+                            img(src="../../assets/product/product1.jpeg", alt="")
+                    .product-txt-wrap 
+                        a.product-tit(href="./prd_detail.html") 紅心芭樂
+                        p.product-price [  25 NTD  ]
+                        p.product-origin 原產地：台灣
+                li.product-item
+                    .product-tag
+                        .btn.advantage-tag 季節限定
+                        .btn.advantage-tag 有機轉型驗證
+                    .product-pic
+                        a(href="./prd_detail.html") 
+                            img(src="../../assets/product/product2.jpeg", alt="")
+                    .product-txt-wrap 
+                        a.product-tit(href="./prd_detail.html") 紅心芭樂
+                        p.product-price [  25 NTD  ]
+                        p.product-origin 原產地：台灣
+            .product-squarebracket
+                .squarebrackets
+                    p.squarebrackets-txt 天然好吃芭樂</br>新鮮脆甜有保證

@@ -1,0 +1,70 @@
+@mixin  BTN {
+    height:50px;
+    padding:0px 25px;
+    line-height: 50px;
+    border-radius: 100px;
+    font-size: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    @include fontStyle_zh_300;
+  
+    @media #{$sm-bp} {
+        padding:0px 15px;
+        font-size: 14px;
+        height:30px;
+        line-height: 30px;
+        @include fontStyle_zh_400;
+        }
+}
+
+
+@mixin  dark-btn {
+        background-color: #000;
+        color: #fff;
+        &:hover{
+            background-color: #424242;
+            color: #fff;
+        }
+}
+
+@mixin light-btn {
+    border: 1.5px #000 solid;
+    color: #000;
+
+    &:hover{
+        border: 1.5px #424242 solid;
+        color: rgba(0, 0, 0, 0.75);
+    }
+}
+
+@mixin green-btn{
+    background: #00683A;
+    color: #fff;
+    &:hover{
+        opacity: 0.8;
+        color: #fff;
+    }
+}
+
+.btn{
+    padding: 0;
+}
+
+.dark-btn{
+    @include BTN;
+    @include dark-btn;
+}
+
+.light-btn{
+    @include BTN;
+    @include light-btn;
+}
+
+.green-btn-active{
+    @include BTN;
+    @include green-btn;
+}
+
+.btn-active{
+    background-color:#00683A !important;
+}
+

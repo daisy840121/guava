@@ -1,0 +1,94 @@
+.joinForm{
+    padding-top: 56px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-top: 24px;
+    // margin-bottom: 104px;
+    @media #{$lg-bp}{
+        padding:24px 16px 0px;
+        }
+}
+
+.join-rule{
+    padding-top: 26px;
+    @media #{$lg-bp}{
+        padding-top: 40px;
+    }
+}
+
+.join-rule-txt{
+    padding-top: 10px;
+}
+
+.join-rule-link{
+    display: block;
+    padding: 62px 0px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    @media #{$lg-bp}{
+        padding: 30px 0px;
+        }
+}
+
+.join-rule-link-arrow{
+    margin-left: 20px;
+}
+
+.join-member-info{
+    padding: 40px 0px 0px;
+}
+
+.add-input{
+    margin-top: 20px;
+    @media #{$lg-bp}{
+        padding:0px;
+        margin-top:8px;
+        }
+}
+
+.half-left{
+    padding-right: 12px;
+    @media #{$lg-bp}{
+        padding:0px;
+        }
+}
+
+.half-right{
+    padding-left: 12px;
+    @media #{$lg-bp}{
+        padding:0px;
+        }
+}
+
+.form-move-pt{
+    @media #{$lg-bp}{
+        padding-top:10px;
+        }
+}
+
+
+.join-submit{
+    @media #{$lg-bp}{
+        margin-top: 25px;
+        }
+}
+
+.el-wrap{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-bottom:56px ;
+}
+
+
+//member-info
+.member-info-btn-box{
+display: flex;
+margin: 98px auto 16px !important;
+@media #{$sm-bp} {
+    margin: 72px auto 24px !important;
+    }
+}
+
+.change-submit{
+    margin:24px 0px 56px;
+}

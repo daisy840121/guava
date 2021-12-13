@@ -1,0 +1,215 @@
+//rwd
+// $container-max-widths: (
+//   sm: 540px,
+//   md: 720px,
+//   lg: 960px,
+//   xl:1140px,
+//   xxl:1320px,
+//   3xl:1500px,
+//   4xl:1680px,
+// );
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1265px,
+  xxl: 1400px
+);
+
+$up1800: "only screen and (min-width: 1800px)"; 
+$up1680: "only screen and (min-width: 1680px)"; //含1440 以上
+$up1440: "only screen and (min-width: 1440px)"; //含1440 以上
+$up1400: "only screen and (min-width: 1400px)"; 
+$up1200: "only screen and (min-width: 1200px)";
+$up1024: "only screen and (min-width: 1024px)";
+$up992: "only screen and (min-width: 992px)";
+$up768:"only screen and (min-width: 768px)";
+
+//平板
+// @media only screen and (min-width :768px) and (max-width : 1265px){
+
+// }
+
+$xxxl-bp: "only screen and (max-width: 1920px)";//含1920 以下
+$down-1920: "only screen and (max-width: 1919px)";
+$xxl-bp: "only screen and (max-width: 1440px)"; 
+$xl-bp: "only screen and (max-width: 1265px)";
+$xl1200bp: "only screen and (max-width: 1199px)";
+$ipad-pro-bp: "only screen and (max-width: 1023px)";
+$lg-bp: "only screen and (max-width: 992px)";
+$lg800-bp: "only screen and (max-width: 800px)";
+$md-bp: "only screen and (max-width: 767px)";
+$sm-bp: "only screen and (max-width: 576px)";
+$ssm-bp: "only screen and (max-width: 537px)";
+$ssmm-bp: "only screen and (max-width:400px)";
+$xs-bp: "only screen and (max-width: 360px)";
+$xxs-bp: "only screen and (max-width: 350px)";
+$xxxs-dp: "only screen and (max-width: 310px)";
+
+
+$input-height:52px;
+$input-border-color: transparent;
+$input-bg:#EEEEEE;  
+$input-border-radius:5px;
+$input-focus-bg:#fff;
+$input-focus-border-color:#000;
+$input-focus-box-shadow:none;
+$btn-focus-box-shadow:none;
+$btn-box-shadow:0px 2px 4px rgb(0 0 0 / 25%);
+
+// $form-select-bg: 
+// $form-select-border-color: 
+//$form-select-border-radius:
+//$form-select-box-shadow:
+//$form-select-focus-box-shadow:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content{
+  margin: auto;
+}
+
+.arrow{
+  width: 54px;
+  height: 30px;
+  @media #{$lg-bp} {
+    width: 42px;
+    height: 23px;
+  }
+}
+
+ .alerts-txt-warp{
+   width: 100%;
+   margin:20px 0px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ .alerts-btn{
+   width: 100%;
+   text-align: center;
+   color: #00683A;
+   &:hover{
+    color: #419765;
+   }
+  
+ }
+
+ .pt-42{
+   padding-top: 42px;
+ }
+ .mr-20{
+   margin-right: 20px;
+ }
+
+.half-left-8{
+  padding-right: 8px;
+  @media #{$lg-bp}{
+      padding:0px;
+      }
+}
+
+.half-right-8{
+  padding-left: 8px;
+  @media #{$lg-bp}{
+      padding:0px;
+      }
+}
+
+.pl-wrap{
+padding-left: 125px;
+@media #{$lg-bp} {
+  padding-left: 0px;
+}
+}
+
+
+.form-control{
+padding: 10.5px 20px !important;
+}
+
+
+.breadcrumb-nav{
+z-index: 2000;
+right: 12%;
+width: 20%;
+position: absolute;
+@media #{$xl-bp}{
+display: none;
+}
+}
+.breadcrumb{
+padding-top: 40px!important;
+justify-content: flex-end;
+@media #{$lg-bp}{
+padding:0px;
+}
+@media #{$down-1920}{
+width: 87%;
+}
+}
+
+
+.breadcrumb-li {
+font-family: "Gen Shin Gothic";
+font-size: 12px;
++ .breadcrumb-li  {
+  padding-left:  0.5rem;
+
+  &::before {
+    float: left;
+    padding-right:0.5rem;
+    color:#000;
+    content:'>';
+  }
+}
+&-active {
+    color:#707070;
+  }
+}
+
+@mixin pageinfo {
+position: absolute;
+width: 34px;
+height: 24px;
+background: #FAFAFA;
+border-radius: 5px;
+font-size: 10px;
+line-height: 16px;
+@include fontStyle_ro_500;
+display: flex;
+justify-content: center;
+align-items: center;
+}

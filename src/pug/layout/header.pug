@@ -1,0 +1,30 @@
+header
+    .nav
+        a.nav-logo(href="./index.html") 
+            img(src="../../assets/logo.png", alt="")
+        .nav-wrap
+            a.nav-icon-box(href="./cart.html") 
+                    img.nav-icon(src="../../assets/cart.svg", alt="") 
+            .nav-icon-box(data-bs-toggle="modal" data-bs-target="#staticBackdrop")
+                img.nav-icon(src="../../assets/admin.svg", alt="") 
+            //login_modal
+            include ./header/loginbox.pug
+        .nav-hamburger
+            img.hamburger(src="../../assets/hamburger.svg" data-bs-toggle="offcanvas" href="#nav-hamburger" role="button" aria-controls="nav-hamburger")
+        //hamburger_menu
+        include ./header/hamburger.pug
+    .nav-second
+        p.nav-title 台中太平芭樂家族
+        a(href="./product.html").column-btn
+            p.column-btn-txt 新鮮產品
+        a(href="./certificate.html").column-btn
+            p.column-btn-txt 合格證書
+
+
+
+
+ 
+
+        
+
+            

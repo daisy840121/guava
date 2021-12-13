@@ -1,0 +1,54 @@
+.error{
+    border: 1.5px solid #B71C1C!important;
+    background-color:rgba(187, 0, 0, 0.1)!important;
+    width: 100%;
+	color:#B71C1C;
+    font-size: 12px;
+    padding: 8px 0px 8px 24px;
+    position: relative;
+    @include fontStyle_zh_500;
+    &::after{
+        content: url('../assets/exclamation.svg');
+        position: absolute;
+        top:8px;
+        left: 0;
+    }
+}
+
+.success{
+    border: 1.5px solid #4CAF50!important;
+    background-color: rgba(76, 175, 80, 0.1)!important;
+}
+
+.successEl{
+    width: 100%;
+	color:#4CAF50;
+    font-size: 12px;
+    background-color: rgba(76, 175, 80, 0.1)!important;
+    padding: 8px 0px 8px 24px;
+    position: relative;
+    @include fontStyle_zh_500;
+    &::after{
+        content: url('../assets/Vector.png');
+        position: absolute;
+        top:8px;
+        left: 0;
+    }
+}
+
+#postalCode-error,
+#account-error,
+#user-password-input-error,
+#email-error,
+#name-error,
+#add-error,
+#tel-error,
+#phone-error,
+#password-error,
+#checkPassword-error,
+#note-error
+{
+    border: none!important;
+    background-color: transparent!important;
+}
+

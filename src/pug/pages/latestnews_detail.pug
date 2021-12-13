@@ -1,0 +1,34 @@
+extends ../layout/layout.pug
+
+block view
+    .breadcrumb-nav
+        ol.breadcrumb
+            li.breadcrumb-li 
+                a(href="./index.html") 首頁
+            li.breadcrumb-li 
+                a(href="./latestnews.html") Latest News
+            li.breadcrumb-li.breadcrumb-li-active 內容
+    .wrap
+        .pl-wrap.latestnews-wrap
+            .latestnews-detail
+                .latestnews-title
+                    .latestnews-title-type 
+                        img.latestnews-title-type-icon(src="../../assets/farm.svg", alt="")
+                        p.latestnews-title-type-txt 活動資訊
+                    .latestnews-txt 
+                        p.latestnews-txt-date 27.03.2020
+                        p.latestnews-txt-title 彰化社頭織襪芭樂
+                .latestnews-like  
+                    .like-btn 
+                        img(src="../../assets/like.svg", alt="")
+                        p.like-btn-txt 讚 10
+                    //- .fb-like(data-href="https://developers.facebook.com/docs/plugins/", data-width, data-layout="button_count", data-action="like", data-size="large", data-share="false")
+            .latestnews-content
+                .clo-lg-6.latestnews-pic
+                    img(src="../../assets/about/believe.png", alt="")
+                .clo-lg-6.latestnews-content-txt
+                    p 彰化社頭織襪芭樂節暨「臺灣製MIT微笑標章產品展售會」，利用台灣科技紡織產品之優勢，連結年貨採購氛圍，進行聯合行銷特賣與體驗模式之特賣活動，預計300家業者及各法人單位共同參與此嘉年華會，透過本活動強化優質產品形象，創造產業商機。
+                    .latestnews-content-btn
+                        .btn.dark-btn 閱讀下一篇
+        
+    //- script(async, defer, crossorigin="anonymous", src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v12.0", nonce="w1CTxy5F")
