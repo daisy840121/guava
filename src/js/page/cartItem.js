@@ -4,7 +4,7 @@ $(function() {
       {
         id:1,
         title: "紅心芭樂",
-        pic:"../../assets/product/product1.jpeg",
+        pic:"../assets/product/product1.jpeg",
         commit:"備註備註備註備註備註備註備註備註備註備註備註備註備註",
         price: 25,
         quantity: 1,
@@ -13,7 +13,7 @@ $(function() {
       {
         id:2,
         title: "牛奶芭樂",
-        pic:"../../assets/product/product2.jpeg",
+        pic:"../assets/product/product2.jpeg",
         commit:"備註備註備註備註備註備註備註備註備註備註備註備註備註",
         price: 25,
         quantity: 1,
